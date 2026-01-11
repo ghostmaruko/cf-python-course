@@ -65,12 +65,12 @@ In this exercise, I set up a Python development environment and created a basic 
 
 ## Learning Reflection
 
-Learned how to set up virtual environments and manage dependencies in Python.
+- Learned how to set up virtual environments and manage dependencies in Python.
 
-Practiced writing a simple Python script that interacts with user input.
+- Practiced writing a simple Python script that interacts with user input.
 
-Learned how to export packages and replicate environments using requirements.txt.
+- Learned how to export packages and replicate environments using requirements.txt.
 
-Gained familiarity with IPython and its enhanced interactive shell features.
+- Gained familiarity with IPython and its enhanced interactive shell features.
 
-Learned how to organize files and folders for a GitHub repository.
+- Learned how to organize files and folders for a GitHub repository.
