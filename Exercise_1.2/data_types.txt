@@ -1,0 +1,65 @@
+# Exercise 1.2: Data Types in Python
+
+## Learning Goals
+
+- Explain variables and data types in Python
+- Summarize the use of objects in Python
+- Create a data structure for your Recipe app
+
+---
+
+## Reflection Questions
+
+### 1. iPython Shell vs Python default shell
+
+The main advantages of using the iPython Shell over the default Python shell are:
+
+- **Auto-completion**: it suggests variable names, functions, and methods automatically.
+- **Advanced output display**: outputs are more readable and formatted nicely.
+- **Command history and magic commands**: you can quickly recall previous commands and use special commands like `%timeit` to measure execution time.
+- **Easier debugging**: code can be run interactively without restarting the session.
+
+In short, iPython is more interactive, readable, and convenient for experimenting and debugging Python code.
+
+---
+
+### 2. Examples of Python Data Types
+
+| Data type | Definition                                               | Scalar or Non-Scalar? |
+| --------- | -------------------------------------------------------- | --------------------- |
+| `int`     | Integer numbers (e.g., 5, -3, 100)                       | Scalar                |
+| `float`   | Decimal numbers (e.g., 3.14, -0.5)                       | Scalar                |
+| `list`    | Ordered, mutable collection of objects (e.g., [1, 2, 3]) | Non-Scalar            |
+| `dict`    | Collection of key-value pairs (e.g., {"a": 1, "b": 2})   | Non-Scalar            |
+
+---
+
+### 3. Difference between lists and tuples
+
+- **List**: mutable → elements can be added, modified, or removed.
+- **Tuple**: immutable → elements cannot be changed after creation.
+- **Typical usage**: use a tuple when data must remain constant (e.g., as dictionary keys), and a list when elements need to be modified dynamically.
+
+---
+
+### 4. Data structure choice for a language-learning flashcard app
+
+Each flashcard contains:
+
+- `word` → string
+- `definition` → string
+- `category` → string (noun, verb, etc.)
+
+**Recommended structure**:
+
+- **Dictionary** for each flashcard, with keys `"word"`, `"definition"`, `"category"`.
+- **List** to store all flashcards, maintaining order and allowing easy additions/removals.
+
+**Advantages**:
+
+- Dictionary → clear and readable access to data, easy to update individual attributes.
+- List → sequential, flexible, supports dynamic modifications.
+
+By combining a dictionary for each flashcard with a list of all flashcards, the app can easily expand to support features like quizzes, filtering by category, or adding new vocabulary.
+
+---
