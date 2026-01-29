@@ -1,0 +1,43 @@
+Task 2.7 – Recipe Application
+Search and Data Visualization
+
+
+Implement Search for Recipes
+
+Objective
+The objective of this task is to allow users to search for recipes based on specific criteria and display the results in a clear and interactive way.
+
+------
+
+Search Criteria
+Users can search for recipes using the following criteria:
+
+Recipe name (text input)
+Ingredients (partial match)
+Cooking time (numeric value or range)
+The search supports partial and wildcard matching, allowing users to retrieve results even if the full recipe name or ingredient is not provided.
+
+-----
+
+Search Logic
+
+User input is collected through a Django form.
+The form data is validated before being processed.
+Based on the selected criteria, a Django QuerySet is created using filter conditions.
+Case-insensitive matching (icontains) is used to allow partial searches.
+
+------
+
+Search Output Format
+
+The filtered QuerySet is converted into a pandas DataFrame.
+The search results are displayed in a tabular format.
+Each recipe name in the result table is clickable and redirects the user to the recipe detail page.
+
+------
+
+User Experience Considerations
+
+Users can submit a search with one or multiple criteria.
+If no criteria are selected, all recipes can be displayed.
+Clear feedback is provided when no results match the search criteria.
